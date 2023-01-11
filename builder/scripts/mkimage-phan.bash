@@ -23,7 +23,7 @@ build() {
     fi
     cd phan
 
-    php8 /usr/local/bin/composer.phar --prefer-dist --no-dev --ignore-platform-reqs --no-interaction install
+    php81 /usr/local/bin/composer.phar --prefer-dist --no-dev --ignore-platform-reqs --no-interaction install
     rm -rf .git
     rm -rf tests vendor/symfony/console/Tests vendor/symfony/debug/Tests
   } >&2
